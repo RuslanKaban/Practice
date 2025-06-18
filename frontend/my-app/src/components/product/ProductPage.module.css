@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.image {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #282828;
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  color: #282828;
+  font-weight: 700;
+}
+
+.oldPrice {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #8B8B8B;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.discount {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #339933;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.quantityBlock {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.quantityBlock button {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.4rem 0.8rem;
+  font-size: 20px;
+}
+
+.addToCart {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: #339933;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 316px;
+  height: 58px;
+}
+
+.addToCart:hover{
+  background-color: #282828;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.description h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.addToCart {
+  background-color: #339933;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addToCart:hover:not(:disabled) {
+  background-color: #286028;
+}
+
+.addToCart:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+/* Новый стиль для кнопки после добавления */
+.added {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid black !important;
+  cursor: default;
+  opacity: 1 !important;
+}

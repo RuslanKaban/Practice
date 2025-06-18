@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+font-family: 'Monteserrat', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 20px;
+  left: 280px;
+  width: 63px;
+  text-align: center;
+  background-color: #339933;
+  color: white;
+  font-family: 'Monteserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.productTitle {
+    font-family: 'Monteserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #282828;
+  margin: 10px 0;
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.oldPrice {
+        font-family: 'Monteserrat', sans-serif;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #8B8B8B
+}
+
+.newPrice {
+          font-family: 'Monteserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #282828;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.priceFilter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.priceFilter label {
+  user-select: none;
+}
+
+.priceInput {
+  width: 70px;
+  padding: 6px 8px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline-offset: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.priceInput:focus {
+  border-color: #339933;
+}
+
+.discountLink {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #282828;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.discountLink:hover {
+  color: #339933;
+}
+
+.activeDiscount {
+  color: #339933;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.filterItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.filterItem label {
+  user-select: none;
+  white-space: nowrap;
+}
+
+.filterItem select {
+  padding: 6px 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline-offset: 2px;
+  transition: border-color 0.2s ease;
+  min-width: 140px;
+}
+
+.filterItem select:focus {
+  border-color: #339933;
+}
+
+.addToCartBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #339933;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartBtn:hover {
+  background-color: #282828;
+}
+

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+  color: #282828;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: right;
+  color: #282828;
+}
+
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #282828;
+}
+
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.clearBtn {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  float: right;
+}
+
+.clearBtn:hover {
+  background-color: #e60000;
+}
+
+/* Флекс-обёртка для корзины и формы */
+.flexWrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap; /* чтобы на мобильных сжималось */
+}
+
+/* Левая колонка — список товаров */
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 2;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Карточка товара */
+.cartItem {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.quantity button {
+  padding: 0.3rem 0.7rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity button:hover {
+  background: #e0e0e0;
+}
+
+.removeBtn {
+  background-color: #ffa726;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.removeBtn:hover {
+  background-color: #fb8c00;
+}
+
+.subtotal {
+  font-size: 1.1rem;
+  min-width: 150px;
+  text-align: right;
+}
+
+.orderDetails {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  height: fit-content;
+}
+
+.firstOrder_form input[type="text"],
+.firstOrder_form input[type="tel"],
+.firstOrder_form input[type="email"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.firstOrder_form input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.firstOrder_form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  width: 313px;
+  height: 58px;
+  background-color: #339933;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #282828;
+  color: white;
+  text-decoration: none;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #339933;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modalContent h2 {
+  margin-bottom: 1rem;
+}
+
+.modalContent p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.modalContent button {
+  background-color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  color: #282828;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modalContent button:hover {
+  background-color: #282828;
+  color: white;
+}
+
+.orderPlacedBtn {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid black !important;
+  cursor: default !important;
+  opacity: 1 !important;
+}
